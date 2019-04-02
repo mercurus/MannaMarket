@@ -1,0 +1,509 @@
+@charset "utf-8";
+/* 
+Manna Market Style Sheet
+Author: Ryan Hunt 10/14
+Jami Rinderknecht 10/14
+
+Color Palette Sampled from Logo and 
+Manna Market Sign from Images
+Brick Red #680B0E
+Dark Red #930C10
+Lighter Red #B81319
+Forest Green #1C471C
+Dark Green #04842F
+Green Variant #008925
+Aqua Green #03A858
+Dark Blue #001C31
+Medium Blue #1B4D61
+Light Blue #2D6A71
+Tan/Orange (bread) #A0521D
+Black Variant #1C1C1C
+Dark Grayscale #222222
+Dark Gray #333333
+Light Gray #AAAAAA
+White #FFFFFF
+Black #000000
+
+
+
+*/
+/**Page Properties**/
+
+html,body{
+  height: 100%;
+  
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Tahoma, Geneva, sans-serif;
+	background-color: #333333;
+	/**greek tiles
+	background-image: url(../resources/greek3.png);
+	background-repeat: repeat;
+	*/
+	
+	/*woven black background*/
+	background:
+	linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+	linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+	linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+	linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+	linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+	linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background-color: #131313;
+	background-size: 20px 20px;
+	
+
+	/*gradient background
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%);
+	background: -webkit-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%);
+	background: -o-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%);
+	background: -ms-linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%);
+	background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%);*/
+}
+
+/**Box Properties**/
+#wrapper{
+	height: 100%;
+  	width: 1200px;
+    margin:0 auto ;
+	background-color: #FFFFFF;
+	position: relative;
+	margin-bottom: -40px;
+}
+#contentwrapper {
+	float: left;
+	width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin-bottom: -40px;
+
+ 
+}
+#sideBar {
+	width:260px;
+	height:100%;
+	float:left;
+	margin-bottom: 30px;
+	padding: 6px 10px 200px 20px; /*bottom padding is large to scroll with dynamic content*/
+	color:#fff;
+	background-color: #333333;
+	border-top: solid 80px rgba(27,77,97,0.5);
+}
+#sideBar span {
+	display: block;
+	font-style: italic;
+	font-weight: bolder;
+	color: #fff;
+	
+}
+
+/**Logo with framing**/
+#logo{
+	margin: -75px 0px 20px 0px;
+	text-align: center;
+	
+
+}
+.nav{
+	margin: 0 auto;
+}
+/**Parent of mainHeader mainContent**/
+#main {
+	height: 100%;
+	float:left;
+	width: 760px;
+	margin-bottom: 30px;
+	padding: 10px 10px 10px 40px;
+	
+}
+/**Parent of #title and #greeting**/
+#mainHeader{
+	width: 100%;
+
+}
+/**Dynamic Form Title**/
+#title{
+	margin: 2px 2px 4px 4px;
+	padding-left:4px;
+	border-left: solid 4px rgba(45, 106, 113, 0.5);
+	font-family: 'Roboto', sans-serif;
+	
+}
+/**Dynamic Login Greeting**/
+#greeting {
+	
+	float: right;
+	margin-top: -70px;/*to position to top right corner*/
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+
+}
+/**Parent of dynamic forms**/
+#mainContent{
+	width: 100%;
+	height:100%;
+	padding: 10px 0px 10px 20px;
+	border-top: 1px #03A858;
+	border-top-style: groove;
+	border-bottom:2px #03A858;
+}
+/*main page image*/
+#hero{
+	width: 600px;
+	height: 215px;
+	margin:0 auto;
+	background-image: url(../resources/food.jpg);
+	margin-top: 100px;
+	box-shadow: 3px 3px 3px #333333;
+	border-radius: 10px;
+
+}
+
+/**Parent of footerContent**/
+#footer {
+	clear:both;
+	height: 40px;
+	position: fixed;
+	bottom: 0;
+	right:0;
+	left: 0;
+	margin-top: 20px;
+	padding: 10px 0px 10px 0px;
+	font-weight:bolder;
+	background-image: url(../resources/screen-bkgd.jpg); 
+	border-top: solid 2px #000000;
+	
+}
+#footerContent{
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+	background-color: rgba(45,106,113,0.40);
+}
+#footer img{
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+}
+
+/**Positioning Properties**/
+
+.left{
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear{
+	clear: both;
+}
+
+/**Text Properties**/
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+
+	
+}
+
+h2 {
+	color: #2D6A71;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/*used to display a small text message like an alert or error message*/
+.message{
+	font-size: 14px;
+	color:#ED1144;
+	font-style: italic;
+	font-weight: bold;
+}
+span.note {
+	font-weight: normal;
+    font-size: 11px;
+    color:;
+}
+
+span.note a {
+    text-decoration: underline;
+}
+
+/**Link Properties**/
+
+a {
+	color: #1B4D61;
+	text-decoration: none;
+	font-weight: bold;
+}
+/**for links on a dark background*/
+a.dark  {
+	color: #fff;
+}
+a:hover {
+	color: #03A858;
+}
+
+/**Form Properties**/
+/**rounded text boxes**/
+input, select, textarea{
+    padding-left: 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border:1px solid #AAAAAA;
+}
+/**Applies a red border and shadow on focus**/
+input:focus, select:focus, textarea:focus{
+	outline: none;
+    border-bottom:1px solid #222222;
+    -webkit-box-shadow: 0px 0px 4px #333333;
+       -moz-box-shadow: 0px 0px 4px #333333;
+            box-shadow: 0px 0px 4px #333333;
+}
+input[type=text], input[type=number]{
+	height: 18px;
+	font-size: 12px;
+}
+.fixwidth{
+	min-width: 200px;
+}
+
+textarea{
+	min-width: 180px;
+	min-height: 20px;
+	overflow: auto;
+}
+select{
+	min-height: 20px;
+	line-height: 20px;
+	min-width: 300px;
+	overflow: auto;
+}
+
+/**Button Styles class="btn" added to all form buttons
+rounded buttons with a gradient on hover**/
+.btn {
+  background: #930C10;
+  background-image: -webkit-linear-gradient(top, #680B0E, #B81319);
+  background-image: -moz-linear-gradient(top, #680B0E, #B81319);
+  background-image: -ms-linear-gradient(top, #680B0E, #B81319);
+  background-image: -o-linear-gradient(top, #680B0E, #B81319);
+  background-image: linear-gradient(to bottom, #680B0E, #B81319);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 3px #666666;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 4px 6px;
+  text-decoration: none;
+  margin: 1px 0px;
+  min-width: 80px;
+
+}
+
+.btn:hover {
+  background: #EE2F2F;
+  background-image: -webkit-linear-gradient(top, #EE2F2F, #FF5555);
+  background-image: -moz-linear-gradient(top, #EE2F2F, #FF5555);
+  background-image: -ms-linear-gradient(top, #EE2F2F, #FF5555);
+  background-image: -o-linear-gradient(top, #EE2F2F, #FF5555);
+  background-image: linear-gradient(to bottom, #EE2F2F, #FF5555);
+  text-decoration: none;
+}
+/**Checkbox Styles**/
+/**HTML must match this in order for style to work 
+*label must be after input tag. 
+*If checkbox title is to be displayed left of the checkbox then it must be in a td to display right then leave label empty
+*If you want the name to display right of checkbox place Name in the label as below
+*label for="" attribute == input  id="" attribute
+*input class="css-checkbox"
+*label class="css-label"
+<input type="checkbox" class="css-checkbox" id="checkboxname" name="checkboxname">
+<label class="css-label" for="chckboxname">Text displayed right of checkbox</label> **/
+input[type=checkbox].css-checkbox {
+	position:absolute; z-index:-1000; 
+	left:-1000px; overflow: hidden; 
+	clip: rect(0 0 0 0); height:1px; 
+	width:1px; margin:-1px; 
+	padding:0; 
+	border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left:22px;
+	height:16px; 
+	display:inline-block;
+	line-height:16px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:14px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -16px;
+}
+label.css-label {
+	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_9697b093566cc8fe6433983d70101581.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/**Radio Buttons http://www.csscheckbox.com/
+Change the classes of your HTML Radio Buttones to 'css-checkboxR'
+Change the classes of your HTML Radio Button Labels to 'css-labelR'
+MAKE SURE that the ID of your Radio Button matches the FOR attribute of your HTML Label tag
+<input type="radio" class="css-checkboxR" name="new" id="new" value=""/>
+<label for="new" class="css-labelR">Option 1</label>
+**/
+input[type=radio].css-checkboxR {
+	position:absolute; 
+	z-index:-1000; 
+	left:-1000px; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; width:1px; 
+	margin:-1px; 
+	padding:0; 
+	border:0;
+}
+
+input[type=radio].css-checkboxR + label.css-labelR {
+	padding-left:25px;
+	height:20px; 
+	display:inline-block;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:14px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type=radio].css-checkboxR:checked + label.css-labelR {
+	background-position: 0 -20px;
+}
+label.css-labelR {
+	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_93bdcb23d5b690e55ed80d6169b77c53.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+input.crates {
+	width: 50px;
+}
+
+table tr th {
+	padding-right: 4px;
+	font-size: 14px;
+	vertical-align: top;
+	text-align: right;
+	width: 200px; /* static so that all forms align at the same point, making it cleaner */
+}
+
+span#sqlInfo {
+	color: #f55;
+}
+
+/**Media Queries**/
+/**If device width is 1024 or less these styles will change**/
+@media all and (max-width: 1024px){
+	#wrapper{
+	  	width: 1000px; 
+	}
+
+	#sideBar {
+		width:250px;
+		padding: 6px 10px 200px 10px; /*bottom padding is large to scroll with dynamic content*/
+
+	}
+	#sideBar span {
+		padding: 10px 4px 10px 4px;
+
+	}
+	#main {
+		width: 670px;
+		margin-bottom: 30px;
+		padding: 10px 20px 10px 20px;
+
+	}
+	#hero{
+	background-image: url(../resources/food1.jpg);
+	width: 400px;
+	height: 143px;
+	}
+	
+/**If device width is 800 or less these styles will change**/
+@media all and (max-width: 800px) {
+	#wrapper{
+	  	width: 760px; 
+	}
+
+	#sideBar {
+		width:240px;
+	}
+		
+	#sideBar span {
+		padding: 2px 4px 2px 4px;
+	}
+
+	#main {
+		width: 400px;
+		margin-bottom: 30px;
+		padding: 4px 20px 10px 10px;
+	}
+	#greeting {
+		padding-right: 10px;
+		}
+	#hero{
+		background-image: url(../resources/food2.jpg);
+		width: 300px;
+		height: 108px;
+		}
+}
+/**If device width is 800 or less these styles will change**/
+@media all and (max-width: 800px) {
+	#wrapper{
+	  	width: 760px; 
+	}
+
+	#sideBar {
+		width:240px;
+	}
+	
+	#sideBar span {
+		padding: 2px 4px 2px 4px;
+	}
+
+	#main {
+		width: 400px;
+		margin-bottom: 30px;
+		padding: 4px 20px 10px 10px;
+	}
+	#greeting {
+	padding-right: 10px;
+	}
+	#hero{
+	background-image: url(../resources/food2.jpg);
+	width: 300px;
+	height: 108px;
+	}
+}
